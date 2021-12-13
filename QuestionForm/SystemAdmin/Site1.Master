@@ -1,0 +1,45 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site1.master.cs" Inherits="QuestionForm.Site1" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title></title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+  <script src="../ExtraTools/jquery-3.6.0.min.js"></script>
+  <script src="../ExtraTools/jquery-ui-1.13.0/jquery-ui.js"></script>
+  <link href="../ExtraTools/jquery-ui-1.13.0/jquery-ui.css" rel="stylesheet" />
+</head>
+<body>
+    <form id="form1" runat="server">
+
+         <div class="container">
+            <nav class="navbar navbar-expand-lg navbar-light" style="background-color: #ffe4e1;">
+                &nbsp &nbsp &nbsp
+                <div class="d-grid gap-2 d-md-flex justify-content-md-end">
+                    &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp
+                    <asp:Button CssClass="btn btn-outline-dark" ID="btnReload" runat="server" Text="重新整理" OnClick="btnReload_Click" />&nbsp &nbsp &nbsp
+                    <asp:Button CssClass="btn btn-outline-dark" ID="btnToDefault" runat="server" Text="返回列表頁" OnClick="btnToDefault_Click" />&nbsp &nbsp &nbsp
+                    <asp:Button CssClass="btn btn-outline-dark" ID="btnExit" runat="server" Text="離開系統" OnClick="btnExit_Click" />
+                </div>
+            </nav>
+            <br />
+        </div>
+        <div style="margin-bottom:2rem;position:relative">
+         
+        <ul style="position:absolute;top:0%">
+          <li style="list-style:none; font-size:4rem">前台</li>
+        </ul>
+        
+        <br/>
+        <br/>
+        </div>
+        <div>
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+    </form>
+</body>
+</html>
